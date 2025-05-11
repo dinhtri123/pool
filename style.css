@@ -828,4 +828,8 @@ body {
     display: flex;
     
   }
+  .bonus-title .shadow {
+    left: 50%;
+    transform: translateX(-50%);
+}
 }

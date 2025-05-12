@@ -50,6 +50,11 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.play-btn:hover {
+  transform: scale(1.05);
 }
 .play-btn::before {
   content: "";
@@ -594,6 +599,13 @@ body {
 .hero-title span br {
   display: none;
 }
+.app-btn img, .footer-social img {
+  transition: transform 0.3s ease-in-out;
+}
+.app-btn:hover img, .footer-social:hover img{
+  transform: scale(1.05);
+}
+
 @media screen and (max-width: 1203px) {
   .gradient,
   .shadow {
@@ -826,10 +838,9 @@ body {
   }
   .logo-link {
     display: flex;
-    
   }
   .bonus-title .shadow {
     left: 50%;
     transform: translateX(-50%);
-}
+  }
 }
